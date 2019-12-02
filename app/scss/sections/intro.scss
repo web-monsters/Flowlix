@@ -1,0 +1,61 @@
+.intro {
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 80px;
+    height: 850px;
+    background: url('../img/intro-bg.png') no-repeat center/cover;
+
+    .intro__text {
+        padding-top: 240px;
+        max-width: 650px;
+        height: 375px;
+
+        .intro__title {
+            margin-bottom: 20px;
+            font-size: 65px;
+            color: #fff;
+        }
+
+        .intro__description {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 29px;
+            color: #fff;
+        }
+
+        .intro__contact-us {
+            padding: 25px 80px;
+            font-size: 18px;
+            line-height: 0;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #E7472E;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    }
+
+    .intro__background {
+        padding-top: 50px;
+    }
+
+    .intro__scroll-text {
+        position: absolute;
+        bottom: 80px;
+        right: 530px;
+        font-size: 18px;
+        font-weight: 100;
+        color: #fff;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        border-top: dashed;
+        
+    }
+    .intro__scroll-img {
+        position: absolute;
+        bottom: -50px;
+        right: 350px;
+    }
+}
