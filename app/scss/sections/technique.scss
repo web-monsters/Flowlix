@@ -1,0 +1,62 @@
+.technique {
+    padding-right: 50px;
+    padding-left: 75px;
+}
+
+.technique__title {
+    position: relative;
+    padding: 170px 120px 120px 0;
+    font-family: "TT Prosto Sans";
+    font-size: 65px;
+    font-weight: 700;
+    color: #123944;
+    background: url('../img/title-bg.png') no-repeat 255px;
+    z-index: 10;
+
+    &::before {
+        position: absolute;
+        left: 130px;
+        bottom: 120px;
+        content: '';
+        width: 370px;
+        height: 32px;
+        background-color: #E7472E;
+        z-index: -11;
+    }
+}
+
+.technique__description {
+    display: flex;
+
+    .technique__description-text {
+        flex-basis: 40%;
+        padding-top: 55px;
+        padding-left: 30px;
+        font-size: 22px;
+        line-height: 48px;
+        color: #123944;
+        background: url('../img/description-bg.png') no-repeat;
+
+        em {
+            font-weight: 600;
+        }
+    }
+
+    .description-text--2 {
+        justify-content: flex-end;
+        padding-right: 96px;
+        flex-basis: 60%;
+        background-position: right 0;
+    }
+
+    .technique__description-img {
+        padding-left: 100px;
+        transform: translateY(-50px);
+    }
+
+    .description-img--2 {
+        position: absolute;
+        padding-left: 0;
+        transform: translateY(-150px);
+    }
+}
