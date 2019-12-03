@@ -1,0 +1,39 @@
+.customers__title {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+    font-family: "TT Prosto Sans";
+    font-size: 65px;
+    font-weight: 700;
+    color: #123944;
+    z-index: 10;
+
+    &::before {
+        position: absolute;
+        bottom: 10px;
+        left: 560px;
+        content: '';
+        width: 370px;
+        height: 25px;
+        background-color: #E7472E;
+        z-index: -11;
+    }
+}
+
+.customers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+        margin-right: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 13%;
+        border: 1px solid #D6DFE5;
+        border-radius: 10px;
+    }
+}
