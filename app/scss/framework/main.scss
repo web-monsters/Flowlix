@@ -1,7 +1,10 @@
+@import 'variables.scss';
+@import 'mixins.scss';
 @import 'reset.scss';
 @import 'containers.scss';
 @import 'fonts.scss';
 
 body {
-    font-family: 'Prosto Sans Bold';
+    font-family: $baseFont;
+    @include fontSmoothing();
 }
