@@ -6,16 +6,16 @@
         position: relative;
         padding-top: 110px;
         margin-bottom: 20px;
-        font-family: "TT Prosto Sans"; // todo
+        font-family: $titleFont;
         font-size: $titleFontSize;
         font-weight: 700;
         color: $colorDark;
         z-index: 10;
 
         &::before {
-            @include position(absolute, auto, auto, 10px, 160px);
+            @include position(absolute, auto, auto, 3px, 149px);
             content: '';
-            width: 160px;
+            width: 180px;
             height: 25px;
             background-color: $colorRed;
             z-index: -11;

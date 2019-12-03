@@ -13,6 +13,7 @@
 
         .intro__title {
             margin-bottom: 20px;
+            font-family: $titleFont;
             font-size: $titleFontSize;
             color: $colorWhite;
         }
@@ -26,6 +27,7 @@
 
         .intro__contact-us {
             padding: 25px 80px;
+            font-family: $accentFont;
             font-size: $baseFontSizeAsRem * 1.125;
             line-height: 0;
             color: $colorWhite;
@@ -33,6 +35,7 @@
             background-color: $colorRed;
             border: none;
             border-radius: 5px;
+            box-shadow: $btnShadow;
         }
     }
 
@@ -47,7 +50,12 @@
         color: $colorWhite;
         text-transform: uppercase;
         transform: rotate(90deg);
-        border-top: dashed;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../img/scroll-border.png') no-repeat; // вот с ней непонятно      
+        }
     }
 
     .intro__scroll-img {

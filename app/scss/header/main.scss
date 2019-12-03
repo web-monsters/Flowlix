@@ -7,8 +7,15 @@
 
     .header__navigation-list {
         .item__link {
+            font-family: $baseFont;
             font-size: $baseFontSizeAsRem * 1.25;
             color: $linkColor;
+            transition: linear .1s;
+
+            &:hover {    // не могу понять как бы сделать, что бы они не прыгали, может шаришь, не ебю
+                font-family: $accentFont;
+                color: #E7472E;
+            }
         }
     }
 }

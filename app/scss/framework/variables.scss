@@ -6,8 +6,19 @@ $colorWhite: #FFFFFF;
 $colorRed: #E7472E;
 $colorLightBlue: #D6DFE5;
 
-$baseFont: 'Prosto Sans Bold', sans-serif;
+
 $baseFontSize: 16px;
 $baseFontSizeAsRem: 1rem;
 
 $titleFontSize: $baseFontSizeAsRem * 4;
+
+//   ===  FONT - FAMILY ====  
+$baseFont: 'Prosto Sans Regular', sans-serif;
+$accentFont: 'Prosto Sans Bold', sans-serif;
+$titleFont: 'Prosto Sans Black', sans-serif;
+$positionFont: 'Prosto Sans Light Italic', sans-serif;
+//   ===  / FONT - FAMILY ====  
+
+
+$btnShadow: 0 5px 30px 2px #FF6155;
+$shadowItem: 0 0 15px 3px #cccccc;

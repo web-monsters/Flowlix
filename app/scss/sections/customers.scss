@@ -2,14 +2,14 @@
     margin: 70px 0;
     text-align: center;
     position: relative;
-    font-family: "TT Prosto Sans"; // todo
+    font-family: $titleFont;
     font-size: $titleFontSize;
     font-weight: 700;
     color: $colorDark;
     z-index: 10;
 
     &::before {
-        @include position(absolute, auto, 560px, 10px, auto);
+        @include position(absolute, auto, 420px, 10px, auto);
         content: '';
         width: 370px;
         height: 25px;
@@ -25,5 +25,11 @@
         flex-basis: 13%;
         border: 1px solid $colorLightBlue;
         border-radius: 10px;
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 15px 3px #cccccc;
+        }
     }
 }

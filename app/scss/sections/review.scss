@@ -1,4 +1,6 @@
 .review {
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 100px;
     position: relative;
 
@@ -25,6 +27,7 @@
                 }
 
                 .item__position {
+                    font-family: $positionFont;
                     font-size: $baseFontSizeAsRem * 1.125;
                     font-weight: 100;
                     color: $colorDark;

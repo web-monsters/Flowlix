@@ -6,7 +6,7 @@
 .technique__title {
     position: relative;
     padding: 170px 120px 120px 0;
-    font-family: "TT Prosto Sans"; // todo
+    font-family: $titleFont; // todo
     font-size: $titleFontSize;
     font-weight: 700;
     color: $colorDark;
@@ -14,9 +14,9 @@
     z-index: 10;
 
     &::before {
-        @include position(absolute, auto, auto, 120px, 130px);
+        @include position(absolute, auto, auto, 120px, 139px);
         content: '';
-        width: 370px;
+        width: 355px;
         height: 32px;
         background-color: $colorRed;
         z-index: -11;
@@ -27,34 +27,33 @@
     display: flex;
 
     .technique__description-text {
-        flex-basis: 40%;
+        flex-basis: 500px;   // непонятно почему изменение этого параметра двигает картинку, но иначе не получается вытянуть текст на нужную ширину
         padding-top: 55px;
         padding-left: 30px;
         font-size: $baseFontSizeAsRem * 1.375;
         line-height: 48px;
         color: $colorDark;
         background: url('../img/description-bg.png') no-repeat;
-
-        em {
-            font-weight: 600;
-        }
+        
     }
 
     .description-text--2 {
         justify-content: flex-end;
+        text-align: right;
         padding-right: 96px;
-        flex-basis: 60%;
+        padding-left: 229px;
+        flex-basis: 94%;
         background-position: right 0;
     }
 
     .technique__description-img {
-        padding-left: 100px;
-        transform: translateY(-50px);
+        transform: translate3d(250px, -50px, 0);
     }
 
     .description-img--2 {
         position: absolute;
-        padding-left: 0;
+        padding-top: 20px;
+        padding-left: 50px;
         transform: translateY(-150px);
     }
 }

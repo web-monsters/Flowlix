@@ -1,10 +1,35 @@
 @font-face {
-    font-family: 'Prosto Sans Bold';
-    src: url('../fonts/fonts/Prosto-Sans-Bold.woff') format('woff');
+    font-family: 'Prosto Sans Regular';
+    src: url('../app/fonts/Prosto-Sans-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     //src: local('app/fonts/Prosto Sans Bold'), url('Prosto Sans Bold.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Prosto Sans Black';
+    src: url('../app/fonts/Prosto-Sans-Black.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    //src: local('app/fonts/Prosto Sans Bold'), url('Prosto Sans Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Prosto Sans Light Italic';
+    src: url('../app/fonts/Prosto-Sans-Light-Italic.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    //src: local('app/fonts/Prosto Sans Bold'), url('Prosto Sans Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Prosto Sans Bold';
+    src: url('../app/fonts/Prosto-Sans-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    //src: local('app/fonts/Prosto Sans Bold'), url('Prosto Sans Bold.woff') format('woff');
+}
+
 
 //@font-face {
 //    font-family: 'Prosto Sans Bold';
