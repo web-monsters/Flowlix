@@ -2,10 +2,6 @@
     padding-top: 100px;
     position: relative;
 
-    .container {
-        display: flex;
-    }
-
     .review__list {
         margin-left: 40px;
 
@@ -23,34 +19,33 @@
 
                 .item__description {
                     padding-bottom: 18px;
-                    font-size: 18px;
+                    font-size: $baseFontSizeAsRem * 1.125;
                     line-height: 27px;
-                    color: #123944;
+                    color: $colorDark;
                 }
 
                 .item__position {
-                    font-size: 18px;
+                    font-size: $baseFontSizeAsRem * 1.125;
                     font-weight: 100;
-                    color: #123944;
+                    color: $colorDark;
                     opacity: .4;
                 }
             }
         }
     }
 
-    .review__button-up {
-        top: 10px;
-        position: absolute;
-        right: 350px;
+    .review__button-up,
+    .review__button-down {
         background-color: transparent;
         border: none;
     }
 
+
+    .review__button-up {
+        @include position(absolute, 10px, 350px, auto, auto);
+    }
+
     .review__button-down {
-        position: absolute;
-        bottom: 0;
-        right: 350px;
-        background-color: transparent;
-        border: none;
+        @include position(absolute, auto, 350px, 0, auto);
     }
 }

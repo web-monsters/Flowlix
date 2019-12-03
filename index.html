@@ -11,12 +11,12 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="flex-container jc-space-between ai-center">
             <div class="header__logo">
                 <img src="img/header-logo.png" alt="" class="header__logo-img">
             </div>
 
-            <ul class="header__navigation-list">
+            <ul class="header__navigation-list flex-row jc-space-between ai-center full-width">
                 <li class="item"><a href="" class="item__link">Main</a></li>
                 <li class="item"><a href="" class="item__link">Our Services</a></li>
                 <li class="item"><a href="" class="item__link">Our Technique</a></li>
@@ -81,7 +81,7 @@
         <div class="container">
             <h3 class="team__title">Our Team</h3>
 
-            <p class="team__description">
+            <p class="team__description full-width">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex
@@ -108,41 +108,41 @@
         <div class="container">
             <h3 class="customers__title">Our Customers</h3>
 
-            <ul class="customers__list">
-                <li class="item">
+            <ul class="customers__list flex-row-wrap jc-space-between">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/1.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/2.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/3.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/4.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/5.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/6.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/7.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/8.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/9.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/10.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/11.png" alt="">
                 </li>
-                <li class="item">
+                <li class="item flex-row jc-center ai-center">
                     <img src="img/customers/12.png" alt="">
                 </li>
             </ul>
@@ -150,7 +150,7 @@
     </section>
 
     <section class="review">
-        <div class="container">
+        <div class="flex-container">
             <div class="review__bg">
                 <img src="img/review-bg.png" alt="" class="review__bg-img">
             </div>
@@ -199,15 +199,17 @@
 
     <section class="feedback">
         <header class="feedback__header">
-            <h3 class="header__title">Write to us</h3>
-            <button class="feedback__call-us" type="button">call us</button>
+            <div class="flex-container jc-space-between ai-center full-height">
+                <h3 class="header__title">Write to us</h3>
+                <button class="feedback__call-us" type="button">call us</button>
+            </div>
         </header>
 
         <div class="container">
             <h3 class="feedback__title">Make a connection</h3>
             <p class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
 
-            <form action="post" class="feedback__form" name="write-us">
+            <form action="post" class="feedback__form flex-row-wrap jc-space-between" name="write-us">
                 <label class="form__item">
                     First Name<sub>*</sub>
                     <input class="form__input" type="text">

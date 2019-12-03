@@ -6,20 +6,18 @@
         position: relative;
         padding-top: 80px;
         text-align: center;
-        font-family: "TT Prosto Sans";
-        font-size: 65px;
+        font-family: "TT Prosto Sans"; // todo
+        font-size: $titleFontSize;
         font-weight: 700;
-        color: #123944;
+        color: $colorDark;
         z-index: 10;
 
         &::before {
-            position: absolute;
-            bottom: 1px;
-            left: 610px;
+            @include position(absolute, auto, auto, 1px, 610px);
             content: '';
             width: 158px;
             height: 28px;
-            background-color: #E7472E;
+            background-color: $colorRed;
             z-index: -11;
         }
     }

@@ -18,9 +18,9 @@ function compileStyles() {
     return src('app/scss/index.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulpConcat('main.css'))
-        .pipe(autoprefixer({
-          cascade: true
-        }))
+        // .pipe(autoprefixer({
+        //   cascade: true
+        // }))
         .pipe(dest('dist/'))
 }
 

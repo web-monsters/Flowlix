@@ -13,27 +13,26 @@
 
         .intro__title {
             margin-bottom: 20px;
-            font-size: 65px;
-            color: #fff;
+            font-size: $titleFontSize;
+            color: $colorWhite;
         }
 
         .intro__description {
             margin-bottom: 20px;
-            font-size: 20px;
+            font-size: $baseFontSizeAsRem * 1.25;
             line-height: 29px;
-            color: #fff;
+            color: $colorWhite;
         }
 
         .intro__contact-us {
             padding: 25px 80px;
-            font-size: 18px;
+            font-size: $baseFontSizeAsRem * 1.125;
             line-height: 0;
-            color: #fff;
+            color: $colorWhite;
             text-transform: uppercase;
-            background-color: #E7472E;
+            background-color: $colorRed;
             border: none;
             border-radius: 5px;
-            box-sizing: border-box;
         }
     }
 
@@ -42,17 +41,15 @@
     }
 
     .intro__scroll-text {
-        position: absolute;
-        bottom: 80px;
-        right: 530px;
-        font-size: 18px;
+        @include position(absolute, auto, 530px, 80px, auto);
+        font-size: $baseFontSizeAsRem * 1.125;
         font-weight: 100;
-        color: #fff;
+        color: $colorWhite;
         text-transform: uppercase;
         transform: rotate(90deg);
         border-top: dashed;
-        
     }
+
     .intro__scroll-img {
         position: absolute;
         bottom: -50px;

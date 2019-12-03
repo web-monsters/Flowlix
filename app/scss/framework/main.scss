@@ -1,10 +1,13 @@
 @import 'variables.scss';
 @import 'mixins.scss';
-@import 'reset.scss';
-@import 'containers.scss';
 @import 'fonts.scss';
+@import 'reset.scss';
+@import 'utilities.scss';
+@import 'containers.scss';
 
+html,
 body {
     font-family: $baseFont;
+    font-size: $baseFontSize;
     @include fontSmoothing();
 }

@@ -6,31 +6,28 @@
         position: relative;
         padding-top: 110px;
         margin-bottom: 20px;
-        font-family: "TT Prosto Sans";
-        font-size: 65px;
+        font-family: "TT Prosto Sans"; // todo
+        font-size: $titleFontSize;
         font-weight: 700;
-        color: #123944;
+        color: $colorDark;
         z-index: 10;
 
         &::before {
-            position: absolute;
-            left: 160px;
-            bottom: 10px;
+            @include position(absolute, auto, auto, 10px, 160px);
             content: '';
             width: 160px;
             height: 25px;
-            background-color: #E7472E;
+            background-color: $colorRed;
             z-index: -11;
         }
     }
 
     .team__description {
         margin-bottom: 80px;
-        font-size: 24px;
+        font-size: $baseFontSizeAsRem * 1.5;
         line-height: 48px;
-        color: #123944;
+        color: $colorDark;
         max-width: 980px;
-        width: 100%;
     }
 
     .team__members-list {
@@ -42,21 +39,21 @@
 
             .item__img {
                 margin-bottom: 80px;
-                border: 1px solid #979797;
+                border: 1px solid $colorLight;
                 border-radius: 15px;
                 box-shadow: 0 40px 70px 2px #637480;
             }
 
             .item__name {
                 margin-bottom: 20px;
-                font-size: 28px;
+                font-size: $baseFontSizeAsRem * 1.75;
                 font-weight: bold;
-                color: #123944;
+                color: $colorDark;
             }
 
             .item__position {
-                font-size: 24px;
-                color: #123944;
+                font-size: $baseFontSizeAsRem * 1.5;
+                color: $colorDark;
             }
         }
     }
