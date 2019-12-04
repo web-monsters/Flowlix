@@ -1,3 +1,25 @@
 .technique {
+    @media screen and (max-width: 1350px) {
+        padding-right: 25px;
+        padding-left: 25px;
 
+        .technique__title {
+            padding-left: 150px;
+            font-size: $baseFontSizeAsRem * 3;
+
+            &::before {
+                @include position(absolute, auto, auto, 120px, 265px);
+                width: 250px;
+                height: 22px;
+            }
+        }
+
+        .technique__description-img {
+            transform: translate3d(100px, -50px, 0);
+        }
+
+        .description-img--2 {
+            transform: translateY(-150px);
+        }
+    }
 }
