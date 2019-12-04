@@ -1,0 +1,7 @@
+.team {
+    @media screen and (max-width: 880px) {
+        .team__title {
+            font-size: $baseFontSizeAsRem * 2;
+        }
+    }
+}
