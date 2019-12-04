@@ -1,0 +1,22 @@
+@media screen and (max-width: 1300px) {
+
+    .header__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .header__logo {
+        display: block;
+    }
+
+    .header__navigation-button {
+        
+    }
+
+   
+    .header__navigation-list {
+        display: none;
+    }
+}
