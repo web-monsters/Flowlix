@@ -59,6 +59,7 @@
             margin-bottom: 60px;
             font-size: $baseFontSizeAsRem * 1.5;
             color: $colorDark;
+            width: 100%;
 
             .form__input {
                 margin-top: 30px;
@@ -75,16 +76,16 @@
             margin-top: 20px;
             max-width: 1300px;
             width: 100%;
-            min-width: 600px;
             height: 439px;
             border: 1px solid #E6EEEE;
             border-radius: 8px;
             outline: none;
-            border: 3px solid transparent;
+            //border: 3px solid transparent;
             transition: .2s;
 
             &:focus {
-                border: 3px solid #E6EEEE;
+                box-shadow: 0 0 0 3px #E6EEEE;
+                //border: 3px solid #E6EEEE;
             }
         }
     
