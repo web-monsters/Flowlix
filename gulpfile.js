@@ -7,6 +7,7 @@ const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
 const browserify = require ("browserify");
+const babel = require('gulp-babel');
 const source = require ("vinyl-source-stream");
 const babelify = require ('babelify');
 const autoprefixer = require('gulp-autoprefixer');
@@ -28,15 +29,18 @@ function compileStyles () {
 }
 
 function compileJs () {
-    return browserify({
-        entries: ['./app/js/index.js']
-    })
-        .transform(babelify.configure({
-          presets : ['@babel/env']
-        }))
-        .bundle()
-        .pipe(source('app.js'))
-        .pipe(dest('dist/'))
+    // return browserify({
+    //     entries: ['./app/js/index.js']
+    // })
+    //     .transform(babelify.configure({
+    //       presets : ["@babel/transform-runtime"]
+    //     }))
+    //     .bundle()
+    //     .pipe(source('app.js'))
+   return src('app/js/index.js')
+      .pipe(babel())
+     .pipe(gulpConcat('app.js'))
+    .pipe(dest('dist/'))
 }
 
 function initServer () {

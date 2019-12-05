@@ -1,7 +1,7 @@
-async function lala () {
-  await fetch('http://jsonplaceholder.typicode.com/users', {method: 'GET'})
-    .then(response => response.json());
-}
+'use strict';
 
-lala()
-  .then(data => console.log(data));
+import Repository from './Repository.js';
+
+Repository.getData('http://jsonplaceholder.typicode.com/users', function (data) {
+  return console.log(data);
+});
