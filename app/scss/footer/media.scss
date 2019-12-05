@@ -1,0 +1,22 @@
+.main-footer {
+    @media screen and (max-width: 950px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .footer__logo {
+            margin-bottom: 30px;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        .social__list {
+            flex-direction: column;
+
+            .item {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
