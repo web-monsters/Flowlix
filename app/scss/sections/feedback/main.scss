@@ -51,16 +51,16 @@
             color: #FF001F;
         }
 
-        .form__item:nth-child(odd) {
-            margin-right: 40px;
-        }
-
         .form__item {
             margin-bottom: 60px;
             font-size: $baseFontSizeAsRem * 1.5;
             color: $colorDark;
 
-            &:last-child {
+            &:nth-child(odd) {
+                margin-right: 40px;
+            }
+
+            &:last-of-type {
                 width: 100%;
             }
 
