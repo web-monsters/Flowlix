@@ -1,5 +1,6 @@
 async function lala () {
-  await {a: 1};
+  await fetch('http://jsonplaceholder.typicode.com/users', {method: 'GET'})
+    .then(response => response.json());
 }
 
 lala()
