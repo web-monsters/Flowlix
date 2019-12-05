@@ -1,0 +1,17 @@
+.feedback {
+  @media screen and (max-width: 1343px) {
+    .feedback__form {
+      .form__item {
+        width: 100%;
+
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+
+        .form__input {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
