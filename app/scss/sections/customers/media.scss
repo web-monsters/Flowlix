@@ -18,4 +18,23 @@
             }
         }
     }
+
+    @media screen and (max-width: 965px) {
+        .customers__list {
+            .item {
+                flex-basis: 25%;
+            }
+        }
+    }
+
+     @media screen and (max-width: 720px) {
+        .customers__list {
+            justify-content: space-around;
+            .item {
+                flex-basis: 40%;
+            }
+        }
+    }
+
+    
 }

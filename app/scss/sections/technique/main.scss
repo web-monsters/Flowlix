@@ -1,6 +1,6 @@
 .technique {
-    padding-right: 50px;
-    padding-left: 75px;
+    //padding-right: 50px;
+    //padding-left: 75px;
 }
 
 .technique__title {
@@ -27,7 +27,7 @@
     display: flex;
 
     .technique__description-text {
-        flex-basis: 500px;   // непонятно почему изменение этого параметра двигает картинку, но иначе не получается вытянуть текст на нужную ширину
+        flex-basis: 600px;   // непонятно почему изменение этого параметра двигает картинку, но иначе не получается вытянуть текст на нужную ширину
         padding-top: 55px;
         padding-left: 30px;
         font-size: $baseFontSizeAsRem * 1.375;
@@ -47,7 +47,7 @@
     }
 
     .technique__description-img {
-        transform: translate3d(250px, -50px, 0);
+        transform: translate3d(200px, -50px, 0);
     }
 
     .description-img--2 {

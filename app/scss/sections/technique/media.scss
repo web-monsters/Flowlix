@@ -22,4 +22,46 @@
             transform: translateY(-150px);
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        .technique__description {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .technique__title {
+            padding-left: 0;
+            background-position: 0 0;
+
+            &::before {
+                left: 117px;
+                width: 0;
+            }
+        }
+
+        .technique__description-img {
+            transform: none;
+            display: block;
+            margin: 0 auto 40px auto;
+            order: 1;
+            max-width: 70%;
+        }
+
+        .description-img--2 {
+            position: static;
+            padding-left: 0;
+        }
+
+        .technique__description-text {
+
+            flex-basis: 100%;
+            order: 2;
+            text-align: justify;
+            padding: 0;
+        }
+
+        .description-img--2 {
+            margin: 0;
+        }
+    }
 }

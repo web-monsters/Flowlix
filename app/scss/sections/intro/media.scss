@@ -1,4 +1,12 @@
 .intro {
+    @media screen and(max-width: 1275px) {
+        .flex-container {
+            .intro__background-img {
+                width: 534px;
+                height: 375px;
+            }
+        }
+    }
     @media screen and (max-width: 1150px) {
         padding-left: 20px;
         
@@ -19,7 +27,7 @@
                 }
 
                 .intro__description {
-                    font-size: $baseFontSizeAsRem * 1.3;
+                    font-size: $baseFontSizeAsRem * 1.2;
                     text-align: left;
                 }
             }
@@ -41,14 +49,87 @@
         }
 
         .intro__scroll-text {
-            @include position(absolute, auto, 500px, 80px, auto);
+            @include position(absolute, auto, 220px, 70px, auto);
+
             font-size: $baseFontSizeAsRem * 1.05;
         }
         .intro__scroll-img {
-            @include position(absolute, auto, 430px, -20px, auto);
+            @include position(absolute, auto, 110px, -40px, auto);
             
-            width: 96px;
-            height: 167px;
+            width: 142px;
+            height: 224px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) { 
+        .flex-container {
+
+            .intro__text {
+                margin-top: -40px;
+                padding-top: 0;
+            }
+            .intro__background-img {
+                justify-content: center;
+                width: 414px;
+                height: 290px;
+            }   
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+
+        .flex-container {
+            .intro__text {
+                margin-top: -170px;
+    
+                .intro__title {
+                    font-size: $baseFontSizeAsRem * 2.8;
+                }
+        
+                .intro__description {
+                    font-size: $baseFontSizeAsRem * 1;       
+                }
+            }  
+
+            .intro__background-img {
+                justify-content: center;
+                width: 347px;
+                height: 243px;
+            }  
+
+            .intro__scroll-text {
+                @include position(absolute, auto, 220px, 70px, auto);
+                font-size: $baseFontSizeAsRem * 1.05;
+            }
+            .intro__scroll-img {
+                @include position(absolute, auto, 110px, -40px, auto);
+                
+                width: 96px;
+                height: 167px;
+            } 
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .flex-container {
+
+            .intro__text {
+                margin-top: -250px;
+
+                .intro__description {
+                    font-size: $baseFontSizeAsRem * 0.8; // не работает?
+                }
+
+                .intro__contact-us {
+                    padding: 23px 60px;
+                    font-size: $baseFontSizeAsRem * 0.8;
+                }
+            }
+            
+            .intro__background-img {
+                width: 267px;
+                height: 187px;
+            }
         }
     }
 }

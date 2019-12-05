@@ -2,12 +2,6 @@
     background-color: #F8FBFB;
     height: 1711px;
 
-    .container {
-        max-width: 1300px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
     .feedback__header {
         display: flex;
         justify-content: space-between;
@@ -79,7 +73,9 @@
         
         .form__textarea {
             margin-top: 20px;
-            width: 1300px;
+            max-width: 1300px;
+            width: 100%;
+            min-width: 600px;
             height: 439px;
             border: 1px solid #E6EEEE;
             border-radius: 8px;
