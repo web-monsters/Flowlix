@@ -1,18 +1,13 @@
 .main-footer {
     padding-top: 70px;
-    height: 248px;
+    padding-bottom: 70px;
     box-shadow: 0 -5px 25px 1px #BFBBBB;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .contacts {
         display: flex;
-        flex-basis: 50%;
         flex-wrap: wrap;
+        flex-shrink: 1;
+        
 
         .footer__logo {
             margin-right: 120px;
@@ -44,11 +39,15 @@
         display: flex;
 
         .item {
-            margin-right: 30px;
             border-radius: 15px;
 
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
             .item__img {
-                height: 100%;
+                width: 79px;
+                height: 79px;
             }
 
             &:hover {
@@ -57,3 +56,5 @@
         }
     }
 }
+
+@import 'media.scss';

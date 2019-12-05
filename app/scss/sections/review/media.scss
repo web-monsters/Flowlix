@@ -1,0 +1,27 @@
+.review {
+    @media screen and (max-width: 1370px) {
+        .review__bg {
+            display: none;
+        }
+
+        .review__button-up {
+            @include position(absolute, 10px, 47.3%, auto, auto);
+        }
+
+        .review__button-down {
+            @include position(absolute, auto, 47.3%, 0, auto);
+        }
+
+        .review__list {
+            .item {
+                .item__img {
+                    width: 130px;
+                    height: 130px;
+                }
+            }
+        }
+    
+    }
+
+}
+
