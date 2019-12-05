@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp watch"
+    "gulp": "gulp watch",
+    "build": "gulp build"
   },
   "browserslist": [
     "> 1%",
@@ -26,12 +27,17 @@
   },
   "homepage": "https://github.com/web-monsters/Flowlix#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {}
 }
