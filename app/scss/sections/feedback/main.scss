@@ -59,7 +59,10 @@
             margin-bottom: 60px;
             font-size: $baseFontSizeAsRem * 1.5;
             color: $colorDark;
-            width: 100%;
+
+            &:last-child {
+                width: 100%;
+            }
 
             .form__input {
                 margin-top: 30px;
