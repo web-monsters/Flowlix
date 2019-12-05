@@ -2,54 +2,58 @@
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 100px;
-    position: relative;
 
-    .review__list {
-        margin-left: 40px;
+    .review-list {
+        position: relative;
 
-        .item {
-            display: flex;
-            margin-bottom: 70px;
+        .review-list__list {
+            margin-left: 40px;
 
-            .item__img {
-                flex-basis: 20%;
-                margin-right: 20px;
-            }
-
-            .item__text {
-                flex-direction: column;
-
-                .item__description {
-                    padding-bottom: 18px;
-                    font-size: $baseFontSizeAsRem * 1.125;
-                    line-height: 27px;
-                    color: $colorDark;
+            .item {
+                display: flex;
+                margin-bottom: 70px;
+    
+                .item__img {
+                    flex-basis: 20%;
+                    margin-right: 20px;
                 }
-
-                .item__position {
-                    font-family: $positionFont;
-                    font-size: $baseFontSizeAsRem * 1.125;
-                    font-weight: 100;
-                    color: $colorDark;
-                    opacity: .4;
+    
+                .item__text {
+                    flex-direction: column;
+    
+                    .item__description {
+                        padding-bottom: 18px;
+                        font-size: $baseFontSizeAsRem * 1.125;
+                        line-height: 27px;
+                        color: $colorDark;
+                    }
+    
+                    .item__position {
+                        font-family: $positionFont;
+                        font-size: $baseFontSizeAsRem * 1.125;
+                        font-weight: 100;
+                        color: $colorDark;
+                        opacity: .4;
+                    }
                 }
             }
-        }
+        } 
     }
 
     .review__button-up,
     .review__button-down {
         background-color: transparent;
         border: none;
+
     }
 
 
     .review__button-up {
-        @include position(absolute, 10px, 350px, auto, auto);
+        @include position(absolute, -70px, calc(50% - 26px), auto, auto);
     }
 
     .review__button-down {
-        @include position(absolute, auto, 350px, 0, auto);
+        @include position(absolute, auto, calc(50% - 26px), 10px, auto);
     }
 }
 

@@ -1,5 +1,6 @@
-.customers {
-    @media screen and (max-width: 1365px) {
+.customers { 
+
+    @media screen and (max-width: 1400px) {
 
         .customers__title {
             font-size: $baseFontSizeAsRem * 3;
@@ -12,29 +13,33 @@
         }
 
 
+        // .customers__list {
+        //     .item {
+        //         width: 1175px;
+        //         height: 95px;
+        //     }
+        // }
+    }
+
+    @media screen and (max-width: 526px) {
         .customers__list {
+
             .item {
-                flex-basis: 20%;
+                margin-right: 20px;
+                margin-bottom: 30px;
             }
         }
     }
 
-    @media screen and (max-width: 965px) {
-        .customers__list {
-            .item {
-                flex-basis: 25%;
-            }
-        }
-    }
-
-     @media screen and (max-width: 720px) {
-        .customers__list {
-            justify-content: space-around;
-            .item {
-                flex-basis: 40%;
-            }
-        }
-    }
+    //  @media screen and (max-width: 720px) {
+    //     .customers__list {
+    //         justify-content: space-around;
+    //         .item {
+    //             width: 1175px;
+    //             height: 95px;
+    //         }
+    //     }
+    // }
 
     
 }

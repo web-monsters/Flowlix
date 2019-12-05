@@ -3,7 +3,6 @@
         .flex-container {
             .intro__background-img {
                 width: 534px;
-                height: 375px;
             }
         }
     }
@@ -15,7 +14,6 @@
             flex-wrap: wrap;
 
             .intro__text {
-                margin: 0 auto;
                 width: 80%;
                 max-width: fit-content;
                 padding-top: 30px;
@@ -44,7 +42,6 @@
             .intro__background-img {
                 justify-content: center;
                 width: 500px;
-                height: 350px;
             }   
         }
 
@@ -65,13 +62,12 @@
         .flex-container {
 
             .intro__text {
-                margin-top: -40px;
+               
                 padding-top: 0;
             }
             .intro__background-img {
                 justify-content: center;
                 width: 414px;
-                height: 290px;
             }   
         }
     }
@@ -80,7 +76,7 @@
 
         .flex-container {
             .intro__text {
-                margin-top: -170px;
+                margin-top: -120px;
     
                 .intro__title {
                     font-size: $baseFontSizeAsRem * 2.8;
@@ -94,7 +90,6 @@
             .intro__background-img {
                 justify-content: center;
                 width: 347px;
-                height: 243px;
             }  
 
             .intro__scroll-text {
@@ -114,7 +109,7 @@
         .flex-container {
 
             .intro__text {
-                margin-top: -250px;
+                margin-top: -200px;
 
                 .intro__description {
                     font-size: $baseFontSizeAsRem * 0.8; // не работает?
@@ -128,7 +123,6 @@
             
             .intro__background-img {
                 width: 267px;
-                height: 187px;
             }
         }
     }

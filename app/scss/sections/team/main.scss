@@ -1,6 +1,9 @@
 .team {
+    padding: 0 50px 187px 50px;
     background: url('../img/team-bg.png') no-repeat;
-    height: 1050px;
+    background-position: 0 0px;
+    background-size: cover;
+    height: auto;
 
     .team__title {
         position: relative;

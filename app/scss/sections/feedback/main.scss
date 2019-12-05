@@ -1,13 +1,13 @@
 .feedback {
     background-color: #F8FBFB;
-    height: 1711px;
+    height: auto;
 
     .feedback__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 160px;
-
+ 
         .feedback__button {
             flex-basis: 50%;
             height: 100%;
@@ -15,7 +15,7 @@
             font-size: $baseFontSizeAsRem * 4.06;  
             background-color: #DFEDED;
             border: none;
-            color: #123944;  // to do Задать тексту opacity 54%
+            color: rgba(18, 57, 68, 0.54); 
         }
 
         .active {
@@ -83,12 +83,10 @@
             border: 1px solid #E6EEEE;
             border-radius: 8px;
             outline: none;
-            //border: 3px solid transparent;
             transition: .2s;
 
             &:focus {
                 box-shadow: 0 0 0 3px #E6EEEE;
-                //border: 3px solid #E6EEEE;
             }
         }
     

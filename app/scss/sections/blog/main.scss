@@ -1,6 +1,7 @@
 .blog {
     height: 750px;
-    background: url('../img/blog-bg.png') no-repeat 100px 100px;
+    background: url('../img/blog-bg.png') no-repeat 10% 50%;
+    background-size: 30%;
 
     .blog__title {
         position: relative;
@@ -13,7 +14,7 @@
         z-index: 10;
 
         &::before {
-            @include position(absolute, auto, auto, 1px, 610px);
+            @include position(absolute, auto, auto, 1px);
             content: '';
             width: 158px;
             height: 28px;
@@ -22,5 +23,5 @@
         }
     }
 }
-
+ 
 @import 'media.scss';

@@ -14,4 +14,25 @@
       }
     }
   }
+
+  @media screen and (max-width: 950px) {
+
+    .feedback__header {
+      height: 120px;
+      
+      .feedback__button {
+        font-size: $baseFontSizeAsRem * 3;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .feedback__header {
+      height: 93px;
+      
+      .feedback__button {
+        font-size: $baseFontSizeAsRem * 1.5;
+      }
+    }
+  }
 }

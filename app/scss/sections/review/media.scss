@@ -5,11 +5,11 @@
         }
 
         .review__button-up {
-            @include position(absolute, 10px, 47.3%, auto, auto);
+            
         }
 
         .review__button-down {
-            @include position(absolute, auto, 47.3%, 0, auto);
+            
         }
 
         .review__list {
@@ -21,6 +21,21 @@
             }
         }
     
+    }
+
+    @media screen and (max-width: 700px) {
+        .review-list__list {
+
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .item__icon {
+                    margin-bottom: 15px;
+                }
+            }
+            
+        }
     }
 
 }
