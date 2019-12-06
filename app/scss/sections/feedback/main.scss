@@ -105,6 +105,12 @@
             box-shadow: 0 5px 30px 2px $colorRed;
             cursor: pointer;
         }
+
+        &--call {
+        .form__item {
+            flex-basis: 48%;
+        }
+    }
     }
 }
 
