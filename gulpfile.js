@@ -3,7 +3,7 @@
 /**
  * @gulpfile
  */
-const { src, watch, dest, series } = require('gulp');
+const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -26,7 +26,7 @@ function compileStyles() {
 
 function compileJs () {
     return src('app/js/index.js')
-        .pipe(concat('main.js'))
+        .pipe(gulpConcat('main.js'))
         .pipe(dest('dist/'))
 }
 
