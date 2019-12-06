@@ -11,6 +11,23 @@
     }
 
     @media screen and (max-width: 768px) {
+        padding: 40px 40px;
+
+        .contacts {
+            width: 320px;
+            
+            .footer__address {
+                font-size: $baseFontSize;
+            }
+
+            .footer__email {
+                .footer__email-text {
+                    font-size: $baseFontSizeAsRem * 1.125;
+                }
+            }    
+        }
+        
+
         .social__list {
             flex-direction: column;
 
@@ -22,5 +39,15 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 20px 10px;
+
+        .contacts {
+            .footer__logo {
+                margin-right: 0;
+            }
+        }     
     }
 }

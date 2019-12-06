@@ -19,8 +19,6 @@
 }
 
 .customers__list {
-    padding-left: 40px; 
-     // не знаю как сделать выравнивание items по центру не прибегая к этому значению, на ширине 1371px это создает лишнюю строку 
     .item {
         margin-right: 40px;
         margin-bottom: 40px;
@@ -37,4 +35,4 @@
     }
 } 
 
-@import 'media.scss';
+@import 'media.scss'; 

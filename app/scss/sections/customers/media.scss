@@ -1,27 +1,25 @@
 .customers { 
-
     @media screen and (max-width: 1400px) {
-
         .customers__title {
             font-size: $baseFontSizeAsRem * 3;
 
             &::before {
-                @include position(absolute, auto, 34%, 10px, auto);
+                @include position(absolute, auto, auto, 10px, 64%);
                 height: 16px;
                 width: 271px;
             }
         }
-
-
-        // .customers__list {
-        //     .item {
-        //         width: 1175px;
-        //         height: 95px;
-        //     }
-        // }
     }
 
     @media screen and (max-width: 526px) {
+        .customers__title {
+            font-size: $baseFontSizeAsRem * 2.25;
+
+            &::before {
+                height: 13px;
+            }
+        }
+
         .customers__list {
 
             .item {
@@ -29,17 +27,5 @@
                 margin-bottom: 30px;
             }
         }
-    }
-
-    //  @media screen and (max-width: 720px) {
-    //     .customers__list {
-    //         justify-content: space-around;
-    //         .item {
-    //             width: 1175px;
-    //             height: 95px;
-    //         }
-    //     }
-    // }
-
-    
+    } 
 }
