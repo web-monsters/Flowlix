@@ -39,7 +39,6 @@
         }
 
         .customers__list {
-
             .item {
                 margin-right: 15px;
                 margin-bottom: 20px;
@@ -48,5 +47,11 @@
                 box-sizing: border-box;
             }
         }
-    } 
+    }
+
+    @media screen and (max-width: 369px) {
+        .customers__list {
+            justify-content: center;
+        }
+    }
 }
