@@ -25,6 +25,12 @@
         }
     }
 
+    @media screen and (max-width: 664px) {
+        .customers__list {
+            justify-content: space-around;
+        }
+    }
+
     @media screen and (max-width: 526px) {
 
         .customers__title {
@@ -39,19 +45,24 @@
         }
 
         .customers__list {
+        
             .item {
                 margin-right: 15px;
                 margin-bottom: 20px;
                 width: 160px;
                 height: 95px;
                 box-sizing: border-box;
+
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
             }
         }
     }
 
     @media screen and (max-width: 369px) {
         .customers__list {
-            justify-content: center;
+          justify-content: space-between;
         }
     }
 }
