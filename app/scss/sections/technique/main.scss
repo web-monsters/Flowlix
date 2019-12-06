@@ -7,7 +7,7 @@
     font-size: $titleFontSize;
     font-weight: 700;
     color: $colorDark;
-    background: url('../img/title-bg.png') no-repeat 255px;
+    background: url('assets/img/title-bg.png') no-repeat 255px;
     z-index: 10;
 
     &::before {
@@ -30,7 +30,7 @@
         font-size: $baseFontSizeAsRem * 1.375;
         line-height: 48px;
         color: $colorDark;
-        background: url('../img/description-bg.png') no-repeat;
+        background: url('assets/img/description-bg.png') no-repeat;
         
     }
 
