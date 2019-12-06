@@ -12,6 +12,11 @@
             .item {
                 display: flex;
                 margin-bottom: 70px;
+
+                &:focus,
+                &:active {
+                    outline: none;
+                }
     
                 .item__img {
                     flex-basis: 20%;
@@ -40,20 +45,32 @@
         } 
     }
 
-    .review__button-up,
-    .review__button-down {
+    .slick-prev,
+    .slick-next {
         background-color: transparent;
         border: none;
 
+        &:focus,
+        &:active {
+            outline: none;
+        }
     }
 
 
-    .review__button-up {
+    .slick-prev {
         @include position(absolute, -70px, calc(50% - 26px), auto, auto);
+        width: 52px;
+        height: 52px;
+        font-size: 0;
+        background: url('../img/buttons/up.png') no-repeat;
     }
 
-    .review__button-down {
+    .slick-next {
         @include position(absolute, auto, calc(50% - 26px), 10px, auto);
+        width: 52px;
+        height: 52px;
+        font-size: 0;
+        background: url('../img/buttons/down.png') no-repeat;
     }
 }
 

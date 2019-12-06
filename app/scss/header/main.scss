@@ -12,6 +12,11 @@
         padding-right: 0px;
         background-color: transparent;
         border: none;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
     }
 
     .header__navigation-list {
