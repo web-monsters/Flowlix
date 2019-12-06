@@ -16,6 +16,12 @@
             background-color: #DFEDED;
             border: none;
             color: rgba(18, 57, 68, 0.54); 
+
+            
+            &:focus,
+            &:active {
+                outline: none;
+            }
         }
 
         .active {
@@ -72,6 +78,16 @@
                 font-size: 60px;  // ??????  какой размер шрифта внутри инпутов?
                 border: 1px solid #E6EEEE;
                 border-radius: 8px;
+                transition: .2s;
+
+                &:focus,
+                &:active {
+                    outline: none;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 3px #E6EEEE;
+                }
             }
         }
         
@@ -104,6 +120,11 @@
             border-radius: 8px;
             box-shadow: 0 5px 30px 2px $colorRed;
             cursor: pointer;
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
         }
     }
 }
