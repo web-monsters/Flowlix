@@ -51,6 +51,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        &:not(.feedback__form--call) {
+            .form__item {
+                &:last-of-type {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
         sub {
             padding-left: 10px;
             color: #FF001F;
@@ -60,25 +68,24 @@
             margin-bottom: 60px;
             font-size: $baseFontSizeAsRem * 1.5;
             color: $colorDark;
+            flex-basis: 48%;
 
             &:nth-child(odd) {
                 margin-right: 40px;
             }
 
-            &:last-of-type {
-                width: 100%;
-            }
-
             .form__input {
                 margin-top: 30px;
                 display: block;
-                max-width: 600px;
                 width: 100%;
                 height: 87px;
-                font-size: 60px;  // ??????  какой размер шрифта внутри инпутов?
+                font-size: $baseFontSizeAsRem * 2;
                 border: 1px solid #E6EEEE;
                 border-radius: 8px;
                 transition: .2s;
+                max-width: calc(100% - 48px);
+                width: 100%;
+                padding: 0 24px;
 
                 &:focus,
                 &:active {
@@ -88,6 +95,10 @@
                 &:focus {
                     box-shadow: 0 0 0 3px #E6EEEE;
                 }
+            }
+
+            select.form__input {
+                max-width: 100%;
             }
         }
         
@@ -126,12 +137,6 @@
                 outline: none;
             }
         }
-
-        &--call {
-        .form__item {
-            flex-basis: 48%;
-        }
-    }
     }
 }
 
