@@ -51,6 +51,16 @@ $('a[href^="#blog"]').on('click', function(event) {
   }
 });
 
+$('button[href^="#feedback"]').on('click', function(event) {
+  var target = $( $(this).attr('href') );
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 800);
+  }
+});
+
 
 // slick 
 $(document).ready(function() {
