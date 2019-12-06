@@ -25,6 +25,7 @@
 
     @media screen and (max-width: 700px) {
         .review-list__list {
+            margin-left: 0;
 
             .item {
                 flex-direction: column;
