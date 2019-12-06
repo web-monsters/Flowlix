@@ -24,20 +24,29 @@
     }
 
     @media screen and (max-width: 700px) {
-        .review-list__list {
-            margin-left: 0;
+       
+       .review-list {
+            .review-list__list {
+                margin-left: 20px;
 
-            .item {
-                flex-direction: column;
-                align-items: flex-start;
+                .item {
+                    flex-direction: column;
+                    align-items: flex-start;
 
-                .item__icon {
-                    margin-bottom: 15px;
-                }
+                    .item__icon {
+                        margin-bottom: 15px;
+                    }
+                }  
             }
-            
-        }
+        }   
     }
 
+    @media screen and (max-width: 550px) {
+        .review-list {
+            .review-list__list {
+                margin-left: 0px;
+            }
+        } 
+    }
 }
 
