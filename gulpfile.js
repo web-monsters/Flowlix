@@ -3,7 +3,7 @@
 /**
  * @gulpfile
  */
-const { src, watch, dest, series } = require('gulp');
+const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -21,6 +21,12 @@ function compileStyles() {
         // .pipe(autoprefixer({
         //   cascade: true
         // }))
+        .pipe(dest('dist/'))
+}
+
+function compileJs () {
+    return src('app/js/index.js')
+        .pipe(gulpConcat('main.js'))
         .pipe(dest('dist/'))
 }
 
@@ -42,5 +48,5 @@ function watchFiles() {
     watch('index.html').on('change', browserSync.reload);
 }
 
-exports.build = series(cleanBuild, compileStyles);
-exports.watch = series(cleanBuild, compileStyles, watchFiles);
+exports.build = series(cleanBuild, parallel(compileJs, compileStyles));
+exports.watch = series(cleanBuild, parallel(compileJs, compileStyles), watchFiles);
