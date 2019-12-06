@@ -11,6 +11,16 @@ $('a[href^="#technique"]').on('click', function(event) {
   }
 });
 
+$('a[href^="#team"]').on('click', function(event) {
+  var target = $( $(this).attr('href') );
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 800);
+  }
+});
+
 $('a[href^="#customers"]').on('click', function(event) {
   var target = $( $(this).attr('href') );
   if( target.length ) {
@@ -41,7 +51,7 @@ $('a[href^="#blog"]').on('click', function(event) {
   }
 });
 
-$('a[href^="#team"]').on('click', function(event) {
+$('button[href^="#feedback"]').on('click', function(event) {
   var target = $( $(this).attr('href') );
   if( target.length ) {
       event.preventDefault();
