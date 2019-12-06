@@ -1,7 +1,5 @@
 .main-header {
-
     @media screen and (max-width: 1300px) {
-
         .header__navigation-list {
             display: none;
         }
@@ -16,9 +14,6 @@
 
         .header__logo {
             margin-right: 20px;
-        }
-        .header__navigation-button {
-            padding-right: 0;
         }
     }
 }

@@ -34,5 +34,12 @@
         font-size: $baseFontSizeAsRem * 1.5;
       }
     }
+
+    .feedback__form {
+      .form__submit-btn {
+        width: 255px;
+        height: 62px;
+      }
+    } 
   }
 }
