@@ -3,7 +3,7 @@
     display: flex;
     padding: 0 20px 40px 80px;
     height: 850px;
-    background: url('../img/intro-bg.png') no-repeat center/cover;
+    background: url('assets/img/intro-bg.png') no-repeat center/cover;
 
 
     .intro__text {
@@ -54,7 +54,7 @@
         &::before {
             content: '';
             position: absolute;
-            background: url('../img/scroll-border.png') no-repeat; // вот с ней непонятно      
+            background: url('assets/img/scroll-border.png') no-repeat; // вот с ней непонятно      
         }
     }
 
