@@ -24,6 +24,12 @@ function compileStyles() {
         .pipe(dest('dist/'))
 }
 
+function compileJs () {
+    return src('app/js/index.js')
+        .pipe(concat('main.js'))
+        .pipe(dest('dist/'))
+}
+
 function initServer() {
     browserSync.init({
         server: {
@@ -42,5 +48,5 @@ function watchFiles() {
     watch('index.html').on('change', browserSync.reload);
 }
 
-exports.build = series(cleanBuild, compileStyles);
-exports.watch = series(cleanBuild, compileStyles, watchFiles);
+exports.build = series(cleanBuild, parallel(compileJs, compileStyles));
+exports.watch = series(cleanBuild, parallel(compileJs, compileStyles), watchFiles);
