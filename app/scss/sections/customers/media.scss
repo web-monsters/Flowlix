@@ -11,6 +11,20 @@
         }
     }
 
+    @media screen and (max-width: 1400px) {
+        .customers__list {
+            padding-left: 150px;
+            padding-right: 110px;  
+        }
+    } 
+    
+    @media screen and (max-width: 1000px) {
+        .customers__list {
+            padding-left: 0px;
+            padding-right: 0px;  
+        }
+    }
+
     @media screen and (max-width: 526px) {
 
         .customers__title {
