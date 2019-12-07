@@ -2,18 +2,34 @@
     @media screen and (max-width: 1300px) {
         .header__navigation-list {
             display: none;
-        }
-    
-        .header__navigation-button {
+            height: 0;
+            background: white;
+            position: absolute;
+            top: 120px;
+            left: 0;
+            flex-direction: column;
+            z-index: 8;
+            width: 100%;
+
+            &.displayed {
+                height: 230px;      
+            }
+
+            .item {
+                margin-bottom: 18px;
+            }
+        }  
+
+        .hamburger {
             display: block;
-        }   
+        } 
     }
 
     @media screen and (max-width: 420px) {
         padding: 0;
 
         .header__logo {
-            margin-right: 20px;
+            margin-right: 0;
         }
     }
 }

@@ -128,3 +128,27 @@ $(document).ready(function() {
   
   addButtonsListeners(buttons);
 })();
+
+
+// header hamburger
+(function () {
+  let hamburger = document.querySelector('.hamburger.hamburger--emphatic');
+  let navigation = document.querySelector('.header__navigation-list');
+
+  function showMenu () {
+    navigation.style.display = 'flex';
+    navigation.classList.add('displayed');
+  }
+
+  function hideMenu () {
+    navigation.style.display = 'none';
+    navigation.classList.remove('displayed');
+  }
+
+  hamburger.addEventListener('click', function (event) {
+    hamburger.classList.toggle('is-active');
+
+    hamburger.classList.contains('is-active') ? 
+    showMenu() : hideMenu();
+  });
+})();
