@@ -8,7 +8,7 @@
     'customers',
     'feedback',
     'blog',
-  ]
+  ];
 
   links.forEach(item => {
     $(`a[href^="#${item}"]`).on('click', function(event) {

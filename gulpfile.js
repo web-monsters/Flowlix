@@ -6,7 +6,7 @@
 const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
-const uglify = require ('gulp-uglify');
+const minify = require('gulp-minify');
 const cssmin = require('gulp-cssmin');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
@@ -30,7 +30,7 @@ function compileStyles() {
 function compileJs () {
     return src('app/js/index.js')
         .pipe(gulpConcat('main.js'))
-        .pipe(uglify())
+        .pipe(minify())
         .pipe(dest('dist/'))
 }
 
@@ -49,7 +49,7 @@ function watchFiles() {
     initServer();
 
     watch('app/scss/**/*.scss').on('change', series(compileStyles, browserSync.stream));
-    watch('app/js/index.js').on('change', series(compileJs, browserSync.stream))
+    watch('app/js/index.js').on('change', series(compileJs, browserSync.stream));
     watch('index.html').on('change', browserSync.reload);
 }
 
