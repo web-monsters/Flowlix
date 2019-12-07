@@ -8,8 +8,8 @@
             font-size: $baseFontSizeAsRem * 3;
 
             &::before {
-                @include position(absolute, auto, auto, 120px, 28%);
-                width: 250px;
+                @include position(absolute, auto, auto, 120px, 42%);
+                width: 252px;
                 height: 22px;
             }
         }
@@ -34,7 +34,7 @@
             background-position: 0 0;
 
             &::before {
-                left: 117px;
+                left: 24%;
                 width: 250px;
             }
         }
@@ -70,8 +70,7 @@
             font-size: $baseFontSizeAsRem * 2.625;
 
             &::before {
-                left: 92px;
-                width: 236px;
+                width: 217px;
             }
         }
     }
@@ -87,8 +86,8 @@
 
             &::before {
                 top: 119px;
-                left: 77px;
-                width: 206px;
+                left: 88px;
+                width: 188px;
                 height: 13px;
             }
         }
