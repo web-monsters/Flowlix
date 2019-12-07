@@ -30,16 +30,16 @@ function compileJs () {
         .pipe(dest('dist/'))
 }
 
-function initServer() {
-    browserSync.init({
-        server: {
-            baseDir: './',
-        },
-        notify: false,
-        port: 3000,
-        open: false,
-    });
-}
+// function initServer() {
+//     browserSync.init({
+//         server: {
+//             baseDir: './',
+//         },
+//         notify: false,
+//         port: 3000,
+//         open: false,
+//     });
+// }
 
 function watchFiles() {
     initServer();

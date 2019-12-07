@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "gulp build",
-    "start": "npm run build && node server.js"
+    "start": "node server.js"
   },
   "browserslist": [
     "> 1%",
