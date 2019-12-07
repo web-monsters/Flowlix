@@ -8,6 +8,6 @@ app.use(express.static(__dirname + ''));
 
 app.get('/', (req, res) => res.sendFile('./index.html'));
 
-app.listen(port, '0.0.0.0', function () {
+app.listen(port, function () {
 	console.log('listen on ' + port);
 });
