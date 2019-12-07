@@ -7,7 +7,7 @@ const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
 const minify = require('gulp-minify');
-const cssmin = require('gulp-cssmin');
+const cleanCss = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const del = require('del');
@@ -19,11 +19,11 @@ function cleanBuild() {
 function compileStyles() {
     return src('app/scss/index.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCss())
         .pipe(gulpConcat('main.css'))
         .pipe(autoprefixer({
             cascade: true
         }))
-        .pipe(cssmin())
         .pipe(dest('dist/'))
 }
 
