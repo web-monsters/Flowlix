@@ -2,21 +2,16 @@
   @media screen and (max-width: 1343px) {
     .feedback__form {
       .form__item {
-        width: 100%;
+        flex-basis: 100%;
 
         &:nth-child(odd) {
           margin-right: 0;
-        }
-
-        .form__input {
-          max-width: 100%;
         }
       }
     }
   }
 
   @media screen and (max-width: 950px) {
-
     .feedback__header {
       height: 120px;
       
@@ -42,4 +37,18 @@
       }
     } 
   }
+
+  @media screen and (max-width: 480px) {
+    .feedback__form {
+      .form__item {
+        margin-bottom: 20px;
+
+        .form__input {
+          height: 60px;
+        }
+      }
+    }
+  }
 }
+  
+

@@ -45,6 +45,7 @@ function watchFiles() {
     initServer();
 
     watch('app/scss/**/*.scss').on('change', series(compileStyles, browserSync.stream));
+    watch('app/js/index.js').on('change', series(compileJs, browserSync.stream))
     watch('index.html').on('change', browserSync.reload);
 }
 

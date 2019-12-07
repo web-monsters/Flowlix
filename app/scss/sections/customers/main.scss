@@ -1,24 +1,37 @@
-.customers__title {
-    position: relative;
-    margin: 70px 0;
-    text-align: center;
-    font-family: $titleFont;
-    font-size: $titleFontSize;
-    font-weight: 700;
-    color: $colorDark;
-    z-index: 10;
-
-    &::before {
-        @include position(absolute, auto, 30%, 10px, auto); // to do "before" position
-        content: '';
-        width: 370px;
-        height: 25px;
-        background-color: $colorRed;
-        z-index: -11;
+.customers {
+    .title-box {
+        margin: 70px auto;
+        display: flex;
+        justify-content: center;
+    
+        .customers__title {
+            position: relative;
+            display: inline;
+            font-family: $titleFont;
+            font-size: $titleFontSize;
+            font-weight: 700;
+            color: $colorDark;
+            z-index: 10;
+        
+            &::before {
+                @include position(absolute, auto, auto, 10px, 32%);
+                content: '';
+                width: 341px;
+                height: 25px;
+                background-color: $colorRed;
+                z-index: -11;
+            }
+        }
     }
 }
 
+
+
+
+
 .customers__list {
+    padding-left: 40px;
+    
     .item {
         margin-right: 40px;
         margin-bottom: 40px;
@@ -27,10 +40,13 @@
         border: 1px solid $colorLightBlue;
         border-radius: 10px;
         transition: .2s;
-        cursor: pointer;
 
         &:hover {
             box-shadow: 0 0 15px 3px #cccccc;
+        }
+
+        img {
+            max-width: 100%; 
         }
     }
 } 

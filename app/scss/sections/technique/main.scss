@@ -1,22 +1,26 @@
+.title-box {
+    display: flex;
+    justify-content: flex-start;
 
+    .technique__title {
+        position: relative;
+        display: inline;
+        padding: 170px 120px 120px 0;
+        font-family: $titleFont; // todo
+        font-size: $titleFontSize;
+        font-weight: 700;
+        color: $colorDark;
+        background: url('assets/img/title-bg.png') no-repeat 255px;
+        z-index: 10;
 
-.technique__title {
-    position: relative;
-    padding: 170px 120px 120px 0;
-    font-family: $titleFont; // todo
-    font-size: $titleFontSize;
-    font-weight: 700;
-    color: $colorDark;
-    background: url('assets/img/title-bg.png') no-repeat 255px;
-    z-index: 10;
-
-    &::before {
-        @include position(absolute, auto, auto, 120px, 139px);
-        content: '';
-        width: 355px;
-        height: 32px;
-        background-color: $colorRed;
-        z-index: -11;
+        &::before {
+            @include position(absolute, auto, auto, 120px, 26%);
+            content: '';
+            width: 329px;
+            height: 32px;
+            background-color: $colorRed;
+            z-index: -11;
+        }
     }
 }
 
@@ -46,11 +50,20 @@
     .technique__description-img {
         transform: translate3d(200px, -50px, 0);
         width: 40%;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .description-img--2 {
         position: absolute;
-        transform: translateY(-200px);
+        transform: translateY(-150px);
+        width: 70%;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 
