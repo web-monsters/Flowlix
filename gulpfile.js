@@ -6,7 +6,7 @@
 const { src, watch, dest, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const gulpConcat = require('gulp-concat');
-const uglify = require ('gulp-uglifyjs');
+const uglify = require ('gulp-uglify');
 const cssmin = require('gulp-cssmin');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
