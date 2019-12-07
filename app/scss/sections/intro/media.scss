@@ -111,9 +111,11 @@
 
             .intro__text {
                 margin-top: -200px;
+                width: 100%;
 
                 .intro__description {
-                    font-size: $baseFontSizeAsRem * 0.8; // не работает?
+                    font-size: $baseFontSizeAsRem * 0.8;
+                    text-align: justify;    
                 }
 
                 .intro__contact-us {

@@ -1,3 +1,4 @@
+'use strict';
 console.log('a');
 
 // Slide scrolltop
@@ -62,6 +63,9 @@ $('button[href^="#feedback"]').on('click', function(event) {
 });
 
 
+
+
+
 // slick 
 $(document).ready(function() {
   $('.reviews-slider').slick({
@@ -72,3 +76,55 @@ $(document).ready(function() {
     verticalSwiping: true,
   });
 });
+
+
+
+
+// Contact Us Form Switch 
+(function () {
+  let activeClassName = 'active';
+  let buttons = Array.from(document.querySelectorAll('#feedback .feedback__header .feedback__button'));
+  // feedback__form--call
+  // feedback__form--write
+
+  /**
+    * @method clearActiveClasses
+    */
+  function clearActiveClasses (items) {
+    items.forEach(item => item.classList.remove(activeClassName));
+  }
+
+  /**
+    * @method showWriteForm
+    */
+  function showWriteForm () {
+    document.querySelector('.feedback__form--call').style.display = 'none';
+    document.querySelector('.feedback__form--write').style.display = 'flex';
+  }
+
+  /**
+    * @method showCallForm
+    */
+  function showCallForm () {
+    document.querySelector('.feedback__form--write').style.display = 'none';
+    document.querySelector('.feedback__form--call').style.display = 'flex';
+  }
+
+  /**
+    * @method addButtonsListeners
+    */
+  function addButtonsListeners (items) {
+    items.forEach(item => {
+      item.addEventListener('click', function (event) {
+        clearActiveClasses(items);
+
+        item.classList.add(activeClassName);
+
+        item.classList.contains('feedback__button--write') ? 
+        showWriteForm() : showCallForm();
+      });
+    });
+  }
+  
+  addButtonsListeners(buttons);
+})();

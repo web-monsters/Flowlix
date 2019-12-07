@@ -16,6 +16,7 @@
             background-color: #DFEDED;
             border: none;
             color: rgba(18, 57, 68, 0.54); 
+            cursor: pointer;
 
             
             &:focus,
@@ -80,7 +81,7 @@
                 width: 100%;
                 height: 87px;
                 font-size: $baseFontSizeAsRem * 2;
-                border: 1px solid #E6EEEE;
+                border: 1px solid $colorLightCyan;
                 border-radius: 8px;
                 transition: .2s;
                 max-width: calc(100% - 48px);
@@ -93,7 +94,7 @@
                 }
 
                 &:focus {
-                    box-shadow: 0 0 0 3px #E6EEEE;
+                    box-shadow: 0 0 0 3px $colorLightCyan;
                 }
             }
 
@@ -105,16 +106,17 @@
         .form__textarea {
             margin-top: 20px;
             max-width: 1300px;
-            width: 100%;
+            width: calc(100% - 48px);
             height: 439px;
-            border: 1px solid #E6EEEE;
+            font-size: $baseFontSizeAsRem * 2;
+            border: 1px solid $colorLightCyan;
             border-radius: 8px;
             outline: none;
             transition: .2s;
             padding: 24px;
 
             &:focus {
-                box-shadow: 0 0 0 3px #E6EEEE;
+                box-shadow: 0 0 0 3px $colorLightCyan;
             }
         }
     
@@ -126,7 +128,7 @@
             text-align: center;
             font-family: $accentFont;
             font-size: $baseFontSizeAsRem * 1.125;
-            color: #fff;
+            color: $colorWhite;
             text-transform: uppercase;
             border: none;
             border-radius: 8px;
@@ -138,6 +140,10 @@
                 outline: none;
             }
         }
+    }
+
+    .feedback__form--call {
+        display: none;
     }
 }
 

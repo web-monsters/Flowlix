@@ -12,7 +12,6 @@
   }
 
   @media screen and (max-width: 950px) {
-
     .feedback__header {
       height: 120px;
       
@@ -38,4 +37,18 @@
       }
     } 
   }
+
+  @media screen and (max-width: 480px) {
+    .feedback__form {
+      .form__item {
+        margin-bottom: 20px;
+
+        .form__input {
+          height: 60px;
+        }
+      }
+    }
+  }
 }
+  
+

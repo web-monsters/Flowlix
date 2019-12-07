@@ -46,12 +46,20 @@
     .technique__description-img {
         transform: translate3d(200px, -50px, 0);
         width: 40%;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .description-img--2 {
         position: absolute;
         transform: translateY(-200px);
         width: 30%;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 

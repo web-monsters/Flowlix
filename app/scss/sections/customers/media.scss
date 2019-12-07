@@ -20,7 +20,7 @@
     
     @media screen and (max-width: 1000px) {
         .customers__list {
-            padding-left: 0px;
+            padding-left: 20px;
             padding-right: 0px;  
         }
     }
@@ -32,7 +32,6 @@
     }
 
     @media screen and (max-width: 526px) {
-
         .customers__title {
             font-size: $baseFontSizeAsRem * 2.25;
 
@@ -45,24 +44,19 @@
         }
 
         .customers__list {
-        
             .item {
                 margin-right: 15px;
                 margin-bottom: 20px;
                 width: 160px;
                 height: 95px;
                 box-sizing: border-box;
-
-                &:nth-child(odd) {
-                    margin-right: 0;
-                }
             }
         }
     }
 
     @media screen and (max-width: 369px) {
         .customers__list {
-          justify-content: space-between;
+            justify-content: center;
         }
     }
 }
