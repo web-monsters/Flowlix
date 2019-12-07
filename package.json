@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp watch"
+    "gulp": "gulp watch",
+    "build": "gulp build"
   },
   "browserslist": [
     "> 1%",
@@ -31,7 +32,9 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2"
   },
   "dependencies": {}
 }
