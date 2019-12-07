@@ -3,25 +3,28 @@
     background: url('../img/blog-bg.png') no-repeat 10% 50%;
     background-size: 30%;
 
-    .blog__title {
-        position: relative;
-        padding-top: 80px;
-        text-align: center;
-        font-family: $titleFont;
-        font-size: $titleFontSize;
-        font-weight: 700;
-        color: $colorDark;
-        z-index: 10;
+    .title-box {
+        justify-content: center;
 
-        &::before {
-            @include position(absolute, auto, auto, 0px, 28px);
-            content: '';
-            width: 158px;
-            height: 28px;
-            background-color: $colorRed;
-            z-index: -11;
+        .blog__title {
+            position: relative;
+            padding-top: 80px;
+            font-family: $titleFont;
+            font-size: $titleFontSize;
+            font-weight: 700;
+            color: $colorDark;
+            z-index: 10;
+    
+            &::before {
+                @include position(absolute, auto, auto, 0px, 28px);
+                content: '';
+                width: 158px;
+                height: 28px;
+                background-color: $colorRed;
+                z-index: -11;
+            }
         }
-    }
+    } 
 }
  
 @import 'media.scss';

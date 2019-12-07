@@ -1,0 +1,12 @@
+.blog {
+    @media screen and (max-width: 768px) {
+        background-position: 70% 10%;
+        .title-box {
+            justify-content: flex-start;
+
+            .blog__title {
+                padding-left: 30px;
+            }
+        }
+    }
+}
