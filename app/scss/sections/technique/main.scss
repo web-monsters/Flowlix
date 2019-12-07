@@ -1,3 +1,7 @@
+.technique {
+    padding-bottom: 70px;
+}
+
 .title-box {
     display: flex;
     justify-content: flex-start;
@@ -34,8 +38,9 @@
         font-size: $baseFontSizeAsRem * 1.375;
         line-height: 48px;
         color: $colorDark;
-        background: url('assets/img/description-bg.png') no-repeat;
-        
+        background: url('assets/img/description-bg.png');
+        background-repeat: repeat-y;
+
     }
 
     .description-text--2 {

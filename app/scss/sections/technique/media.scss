@@ -73,6 +73,10 @@
                 width: 217px;
             }
         }
+
+        .technique__description-text {
+            font-size: $baseFontSizeAsRem * 1;
+        }
     }
 
     @media screen and (max-width: 520px) {

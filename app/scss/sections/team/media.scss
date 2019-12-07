@@ -1,5 +1,7 @@
 .team {
     @media screen and (max-width: 880px) {
+        padding-bottom: 40px;
+        
         .team__title {
             font-size: $baseFontSizeAsRem * 3;
 
@@ -31,6 +33,7 @@
     }
 
     @media screen and (max-width: 480px) {
+        
 
         .team__title {
             font-size: $baseFontSizeAsRem * 2;

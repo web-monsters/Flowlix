@@ -33,10 +33,11 @@
             color: $colorWhite;
             text-transform: uppercase;
             background-color: $colorRed;
-            border: none;
+            border: 3px solid $colorRed;
             border-radius: 5px;
             box-shadow: $btnShadow;
             cursor: pointer;
+            transition: .1s;
 
             &:focus,
             &:active {
@@ -47,20 +48,29 @@
 
     .intro__background {
         padding-top: 50px;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .intro__scroll-text {
         @include position(absolute, auto, 530px, 80px, auto);
         font-size: $baseFontSizeAsRem * 1.125;
         font-weight: 100;
-        color: $colorWhite;
+        color: rgba(255, 255, 255, 0.79);
         text-transform: uppercase;
         transform: rotate(90deg);
         
         &::before {
             content: '';
             position: absolute;
-            background: url('assets/img/scroll-border.png') no-repeat; // вот с ней непонятно      
+            top: -83px;
+            left: 68px;
+            background: url('assets/img/scroll-border.png') no-repeat; // вот с ней непонятно
+            width: 2px;
+            height: 154px;
+            transform: rotate(90deg);
         }
     }
 
