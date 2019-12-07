@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "npm run build && node server.js"
   },
   "browserslist": [
     "> 1%",
