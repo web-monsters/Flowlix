@@ -4,7 +4,7 @@
             font-size: $baseFontSizeAsRem * 3;
 
             &::before {
-                @include position(absolute, auto, auto, 10px, 28%);
+                @include position(absolute, auto, auto, 10px, 32%);
                 height: 16px;
                 width: 271px;
             }
@@ -26,14 +26,28 @@
     }
 
     @media screen and (max-width: 664px) {
+        .title-box {
+            .customers__title {
+                font-size: $baseFontSizeAsRem * 2.75;
+
+                &:before {
+                    width: 236px;
+                    height: 14px;
+                }
+            }
+        }
+        
+
         .customers__list {
             justify-content: space-around;
         }
     }
 
     @media screen and (max-width: 526px) {
+
+
         .customers__title {
-            font-size: $baseFontSizeAsRem * 2.25;
+            
 
             &::before {
                 @include position(absolute, auto, auto, 8px, 28%);
@@ -55,6 +69,16 @@
     }
 
     @media screen and (max-width: 369px) {
+        .title-box {
+            .customers__title {
+                font-size: $baseFontSizeAsRem * 2.25;
+
+                &:before {
+                    width: 193px;
+                    height: 10px;
+                }
+            }
+        }
         .customers__list {
             justify-content: center;
         }

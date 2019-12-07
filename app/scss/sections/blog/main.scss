@@ -14,7 +14,7 @@
         z-index: 10;
 
         &::before {
-            @include position(absolute, auto, auto, 1px);
+            @include position(absolute, auto, auto, 0px, 28px);
             content: '';
             width: 158px;
             height: 28px;
