@@ -4,7 +4,7 @@
             font-size: $baseFontSizeAsRem * 3;
 
             &::before {
-                @include position(absolute, auto, auto, 10px, 45%);
+                @include position(absolute, auto, auto, 10px, 28%);
                 height: 16px;
                 width: 271px;
             }
@@ -36,9 +36,9 @@
             font-size: $baseFontSizeAsRem * 2.25;
 
             &::before {
-                @include position(absolute, auto, auto, 10px, 30%);
+                @include position(absolute, auto, auto, 8px, 28%);
                 height: 13px;
-                width: 0;
+                width: 211px;
 
             }
         }
