@@ -1,3 +1,7 @@
+.technique {
+    padding-bottom: 70px;
+}
+
 .title-box {
     display: flex;
     justify-content: flex-start;
@@ -37,6 +41,7 @@
         line-height: 48px;
         color: $colorDark;
         background: url('../img/description-bg.png') no-repeat;
+        background-repeat: repeat-y;
         
     }
 
@@ -55,6 +60,7 @@
 
         img {
             max-width: 100%;
+            
         }
     }
 
