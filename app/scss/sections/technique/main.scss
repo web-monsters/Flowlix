@@ -20,7 +20,6 @@
 
 .technique__description {
     display: flex;
-    margin-top: 30px;
 
     .technique__description-text {
         flex-basis: 600px;   // непонятно почему изменение этого параметра двигает картинку, но иначе не получается вытянуть текст на нужную ширину
